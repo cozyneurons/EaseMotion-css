@@ -1,0 +1,22 @@
+/**
+ * EaseMotion CSS - Dark Mode Headings Fix
+ * 
+ * Issue: In core/base.css, headings and table headers are hardcoded to 
+ * var(--ease-color-neutral-900). This causes readability issues in dark mode 
+ * since the background is also dark.
+ * 
+ * Solution: Map these typography elements to the semantic var(--ease-color-text)
+ * which automatically handles theme switching seamlessly.
+ */
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+th {
+  color: var(--ease-color-text);
+}
+
+/* End of bug fix submission */
